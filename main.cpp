@@ -24,9 +24,15 @@ int main()
 	CircleShape shape(100.f);
 	shape.setFillColor(Color::Green);
 
+	// clock for timing
+	Clock clock;
+
 	// start the game loop
 	while (window.isOpen())
 	{
+		// Handle Timing
+		Time dt = clock.restart();
+
 		// ---- PROCESS EVENTS ----------------------------------------------------- //
 		while (const std::optional event = window.pollEvent())
 		{
