@@ -9,7 +9,9 @@
 
 
 //--INCLUDES--//
+#include <iostream>
 #include <SFML/Graphics.hpp>
+#include <SFML/Graphics/Texture.hpp>
 
 // -----------------------------------------------------------------------------
 
@@ -18,11 +20,18 @@ int main()
 	using namespace sf;
 
 	// create the main window
-	RenderWindow window(VideoMode({ 200, 200 }), "SFML Test");
+	RenderWindow window(VideoMode({ 800, 800 }), "DVD Logo Screensaver");
 
-	// debug shape
-	CircleShape shape(100.f);
-	shape.setFillColor(Color::Green);
+	// create a texture for the DVD logo
+	Texture dvdLogoTexture;
+	if (!dvdLogoTexture.loadFromFile("Bin/Dvdlogo.png"))
+	{
+		std::cout << "Error loading DVD logo texture" << std::endl;
+	}
+
+	// create a sprite shape for the DVD logo
+	Sprite dvdLogoSprite(dvdLogoTexture);
+	dvdLogoSprite.setPosition({ 0,0 });		// SFML 3 now explicitly converts parameter pairs to their corresponding sf::Vector2<T> type...nice
 
 	// start the game loop
 	while (window.isOpen())
@@ -37,12 +46,12 @@ int main()
 		}
 
 		// ---- CLEAR SCREEN ------------------------------------------------------- //
-		window.clear();
+		window.clear(Color::White);
 
 		// ---- UPDATE ------------------------------------------------------------- //
 
 		// ---- RENDER ------------------------------------------------------------- //
-		window.draw(shape);
+		window.draw(dvdLogoSprite);
 
 		// ---- DISPLAY WINDOW ----------------------------------------------------- //
 		window.display();
