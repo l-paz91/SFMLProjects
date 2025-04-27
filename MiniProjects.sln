@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MiniProjects", "MiniProject
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DVDLogoScreensaver", "DVDLogoScreensaver\DVDLogoScreensaver.vcxproj", "{9C18ADB6-C165-4C22-BE06-14A0C4FBDB4D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FramerateDisplay", "..\FramerateDisplay\FramerateDisplay.vcxproj", "{C7CF9B62-A55D-4AD3-88CE-A7773B116EE8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FramerateDisplay", "FramerateDisplay\FramerateDisplay.vcxproj", "{C7CF9B62-A55D-4AD3-88CE-A7773B116EE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
