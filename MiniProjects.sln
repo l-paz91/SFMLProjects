@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stopwatch", "Stopwatch\Stop
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DisplayingUserInput", "DisplayingUserInput\DisplayingUserInput.vcxproj", "{8E3CF756-9FC9-4457-BF46-2734C21DB014}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AnimatingSprites", "AnimatingSprites\AnimatingSprites.vcxproj", "{CC43C007-A78A-4CD7-A46D-F3917083D62E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{8E3CF756-9FC9-4457-BF46-2734C21DB014}.Release|x64.Build.0 = Release|x64
 		{8E3CF756-9FC9-4457-BF46-2734C21DB014}.Release|x86.ActiveCfg = Release|Win32
 		{8E3CF756-9FC9-4457-BF46-2734C21DB014}.Release|x86.Build.0 = Release|Win32
+		{CC43C007-A78A-4CD7-A46D-F3917083D62E}.Debug|x64.ActiveCfg = Debug|x64
+		{CC43C007-A78A-4CD7-A46D-F3917083D62E}.Debug|x64.Build.0 = Debug|x64
+		{CC43C007-A78A-4CD7-A46D-F3917083D62E}.Debug|x86.ActiveCfg = Debug|Win32
+		{CC43C007-A78A-4CD7-A46D-F3917083D62E}.Debug|x86.Build.0 = Debug|Win32
+		{CC43C007-A78A-4CD7-A46D-F3917083D62E}.Release|x64.ActiveCfg = Release|x64
+		{CC43C007-A78A-4CD7-A46D-F3917083D62E}.Release|x64.Build.0 = Release|x64
+		{CC43C007-A78A-4CD7-A46D-F3917083D62E}.Release|x86.ActiveCfg = Release|Win32
+		{CC43C007-A78A-4CD7-A46D-F3917083D62E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
